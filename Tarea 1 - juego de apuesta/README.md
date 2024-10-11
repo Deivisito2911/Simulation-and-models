@@ -1,4 +1,4 @@
-#Programa de simulacion de apuesta
+# Programa de simulacion de apuesta
 
 **Reglas del juego**
 El juego consiste en tirar 1 dado y una moneda al mismo tiempo. El jugador
