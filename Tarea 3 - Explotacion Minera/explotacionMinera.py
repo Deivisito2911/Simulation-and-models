@@ -12,6 +12,9 @@ def Probabilidad():#probabilidad de fallar o no una exploracion
     return random.choices([True, False], weights=[probExito, probFallar])[0]
 
 def exploracion(barriles,cuentaEmpresa,cuentaEstado):#Simulacion de distintas exploraciones
+    barriles = 0
+    cuentaEmpresa = 0
+    cuentaEstado = 0
     exitos = 0
     for idx in range(cantExploraciones):
         cuentaEmpresa-= precioExploracion
@@ -24,10 +27,7 @@ def exploracion(barriles,cuentaEmpresa,cuentaEstado):#Simulacion de distintas ex
     return barriles,cuentaEmpresa,cuentaEstado,exito#Actualizacion de variables
 
 def main():#simulacion
-    barriles = 0
-    cuentaEmpresa = 0
-    cuentaEstado = 0
-    barriles, cuentaEmpresa, cuentaEstado, umbralExito = exploracion(barriles,cuentaEmpresa,cuentaEstado)
+    barriles, cuentaEmpresa, cuentaEstado, umbralExito = exploracion(cantExploraciones, precioExploracion, cantBarriles, precioBarril, gananciaEmpresa, gananciaEstado)
     print("Cantidad de exploraciones : ",cantExploraciones)
     print("Cantidad de barriles obtenidos : ",barriles)
     print("Estado de cuenta de la empresa : ",cuentaEmpresa)
