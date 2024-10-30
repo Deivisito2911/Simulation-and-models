@@ -13,5 +13,5 @@ Hay que simular este problema de forma de :
 -Encontrar la estrategia conveniente para la empresa
 -¿Cuál es el umbral de éxito?
 
-**Estrategia**
-Se considerarán un total de 1 exploración al mes, resultando en 12 exploraciones anuales, dependiendo del resultado de las mismas se iran evaluando de acuerdo a    las ganancias que pueda tener la empresa
+**Procedimiento**
+Se hace una simulacion con 1000000 de exploraciones, para poder visualizar el umbral de exito
